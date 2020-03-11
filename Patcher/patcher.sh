@@ -9,11 +9,12 @@ usage() {
     echo -e "\t[--verbose|-v]: Verbose mode"
 }
 
+tool=/root/tool
 LOCALDIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
 TOOLSDIR="$LOCALDIR/tools"
 PAYLOAD_EXTRACTOR="$TOOLSDIR/update_payload_extractor/extract.py"
 VERBOSE=n
-OUTDIR="$LOCALDIR/out"
+OUTDIR="$tool/out"
 
 POSITIONAL=()
 while [[ $# -gt 0 ]]

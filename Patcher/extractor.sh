@@ -30,7 +30,7 @@ if [ "$1" == "" ]; then
     usage
     exit 1
 fi
-
+tool=/root/tool
 LOCALDIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
 [[ ! -d "$LOCALDIR/tools/extract_android_ota_payload" ]] && git clone -q https://github.com/cyxx/extract_android_ota_payload.git "$LOCALDIR/tools/extract_android_ota_payload"
 [[ ! -d "$LOCALDIR/tools/oppo_ozip_decrypt" ]] && git clone -q https://github.com/bkerler/oppo_ozip_decrypt.git "$LOCALDIR/tools/oppo_ozip_decrypt"
@@ -53,12 +53,11 @@ splituapp="$toolsdir/splituapp"
 
 romzip="$(realpath $1)"
 romzipext=${romzip##*.}
-PARTITIONS="system vendor cust odm oem factory product xrom modem dtbo boot tz systemex"
-EXT4PARTITIONS="system vendor cust odm oem factory product xrom systemex"
-OTHERPARTITIONS="tz.mbn:tz tz.img:tz modem.img:modem NON-HLOS:modem boot-verified.img:boot dtbo-verified.img:dtbo"
+PARTITIONS="vendor"
+EXT4PARTITIONS="vendor"
 
 echo "Create Temp and out dir"
-outdir="$LOCALDIR/out"
+outdir="$tool/out"
 if [ ! "$2" == "" ]; then
     outdir="$(realpath $2)"
 fi

@@ -1,0 +1,9 @@
+path=/root/tool/out
+
+cd $path
+wget https://android.googleapis.com/packages/ota-api/nokia_b2nsprout_onyx00ww/afd338bfb14d447b716c220424b2ad2c66213183.zip
+mv afd338bfb14d447b716c220424b2ad2c66213183.zip 2019-12.zip
+
+wget https://android.googleapis.com/packages/ota-api/nokia_b2nsprout_onyx00ww/44f7f4cc20c6e70b8f71469d4b2b9f8be467249c.zip
+mv 44f7f4cc20c6e70b8f71469d4b2b9f8be467249c.zip 2020-01.zip
+

@@ -19,7 +19,7 @@ Also install [mono](https://www.mono-project.com/docs/getting-started/install/ma
 ## How to use
 ### Download
 ```
-git clone --recurse-submodules https://github.com/erfanoabdi/Firmware_extractor.git
+git clone --recurse-submodules https://github.com/RaghuVarma331/Nokia-VPatcher-Tool.git tool
 ```
 
 ### Extract images from firmware URL
