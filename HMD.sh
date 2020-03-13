@@ -31,7 +31,7 @@ D1()
     ./DRG.sh
     cd ..
     sf=https://sourceforge.net/projects/hmd-vendors/files/DRG/
-    ./Patcher/patcher.sh -v $path/out/2019-12.zip $path/out/2020-01.zip $path/out/2020-02.zip
+    ./Patcher/patcher.sh -v $path/out/2019-12.zip $path/out/2020-01.zip $path/out/2020-02.zip $path/out/2020-03_1.zip
     cd out
     mkdir vendor
     mount -o rw,noatime vendor.img vendor
@@ -53,7 +53,7 @@ B1()
     ./B2N.sh
     cd ..
     sf=https://sourceforge.net/projects/hmd-vendors/files/B2N/
-    ./Patcher/patcher.sh -v $path/out/2019-12.zip $path/out/2020-01.zip $path/out/2020-02.zip
+    ./Patcher/patcher.sh -v $path/out/2019-12.zip $path/out/2020-01.zip $path/out/2020-02.zip $path/out/2020-03_1.zip
     cd out
     mkdir vendor
     mount -o rw,noatime vendor.img vendor
@@ -75,7 +75,7 @@ C1()
     ./CTL.sh
     cd ..
     sf=https://sourceforge.net/projects/hmd-vendors/files/CTL/
-    ./Patcher/patcher.sh -v $path/out/2019-11.zip $path/out/2019-12.zip $path/out/2020-01.zip $path/out/2020-02.zip
+    ./Patcher/patcher.sh -v $path/out/2019-11.zip $path/out/2019-12.zip $path/out/2020-01.zip $path/out/2020-02.zip $path/out/2020-03_1.zip
     cd out
     mkdir vendor
     mount -o rw,noatime vendor.img vendor
@@ -97,7 +97,7 @@ P1()
     ./PL2.sh
     cd ..
     sf=https://sourceforge.net/projects/hmd-vendors/files/PL2/
-    ./Patcher/patcher.sh -v $path/out/2019-12.zip $path/out/2020-01.zip $path/out/2020-02.zip
+    ./Patcher/patcher.sh -v $path/out/2019-12.zip $path/out/2020-01.zip $path/out/2020-02.zip $path/out/2020-03_1.zip
     cd out
     mkdir vendor
     mount -o rw,noatime vendor.img vendor

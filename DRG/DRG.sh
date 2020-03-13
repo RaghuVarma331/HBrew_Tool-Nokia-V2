@@ -6,3 +6,5 @@ wget https://android.googleapis.com/packages/ota-api/nokia_drgsprout_dragon00ww/
 mv 731b6d59f928082fe22c6bd398c7ebfc6407fffb.zip 2020-01.zip
 wget https://android.googleapis.com/packages/ota-api/nokia_drgsprout_dragon00ww/48557265b38ded131446cfdeb0c52f7c1d481847.zip
 mv 48557265b38ded131446cfdeb0c52f7c1d481847.zip 2020-02.zip
+wget https://sourceforge.net/projects/testing-rv/files/I-BUILDS/DRG-4150-0-00WW-B01-410E-0-00WW-B01-update.zip
+mv DRG-4150-0-00WW-B01-410E-0-00WW-B01-update.zip 2020-03_1.zip
