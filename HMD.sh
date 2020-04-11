@@ -26,6 +26,7 @@ password=$(cat $cred/cred** | grep sf | cut -d "=" -f 2)
 
 D1()
 {
+    ./setup.sh
     mkdir out
     cd DRG
     ./DRG.sh
@@ -48,6 +49,7 @@ D1()
 
 B1()
 {
+    ./setup.sh
     mkdir out
     cd B2N
     ./B2N.sh
@@ -70,6 +72,7 @@ B1()
 
 C1()
 {
+    ./setup.sh
     mkdir out
     cd CTL
     ./CTL.sh
@@ -92,6 +95,7 @@ C1()
 
 P1()
 {
+    ./setup.sh
     mkdir out
     cd PL2
     ./PL2.sh
